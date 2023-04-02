@@ -1,0 +1,11 @@
+.result{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.result h2{
+    margin: 0 auto;
+}

@@ -1,0 +1,38 @@
+.question {
+    max-width: 60rem;
+    width: 60%;
+    margin: 0.5rem auto;
+    animation: question-appear 1s ease-out forwards;
+  }
+
+.question button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+  background-color: rgb(183, 183, 202);
+  cursor: pointer;
+  background-color: green;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 10rem;
+  color: white;
+  font-weight: 700;
+  font-size: medium;
+}
+
+.question button:hover{
+  background-color: rgb(187, 199, 204);
+}
+
+  @keyframes question-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
