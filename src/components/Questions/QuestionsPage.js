@@ -12,7 +12,12 @@ const QuestionsPage = ({ questions }) => {
       ...answers,
       [currentQuestionIndex]: selectedAnswer
     });
-    history.push('/results');
+    if (currentQuestionIndex === questions.length - 1) {
+      history.push({
+        pathname: "/results",
+        state: { answers },
+      });
+    }
   };
 
   const handleNextClick = (selectedAnswer) => {
@@ -41,5 +46,4 @@ const QuestionsPage = ({ questions }) => {
     </div>
   );
 };
-
 export default QuestionsPage;

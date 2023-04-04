@@ -1,19 +1,3 @@
-// import Header from './components/Layout/Header';
-// import Question from './components/Questions/Question';
-// import { QuestionProvider } from './store/QuestionContext';
-// import questions from './components/Questions/questions.json';
-
-// function App() {
-//   return (
-//     <QuestionProvider>
-//       <Header />
-//       <main>
-//         <Question questions={questions}/>
-//       </main>
-//     </QuestionProvider>
-//   );
-// }
-
 import React from "react";
 import { QuestionProvider } from "./store/QuestionContext";
 import QuestionsPage from "./components/Questions/QuestionsPage";

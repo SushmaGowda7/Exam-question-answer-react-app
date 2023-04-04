@@ -11,7 +11,7 @@ const Question = ({ question, onHandleNextClick, onSubmit }) => {
   };
 
   const handleNextClick = () => {
-    onHandleNextClick();
+    onHandleNextClick(selectedOption);
     setSelectedOption("");
   };
 
